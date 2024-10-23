@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGM: 38697939 - Leonardo da Silva Cebin - ADS 1º Semestre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #007548;
+        font-family: "Poiret One", cursive; /* New poetic font for body text */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        width: 100%;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      p {
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        position: relative;
+        transition: background-color 0.4s, color 0.4s;
+      }
+      nav > ul > li {
+        padding: 15px 20px;
+        color: white;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        background-color: orange;
+        color: white;
+      }
+      nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+      }
+      nav ul ul li {
+        width: 200px;
+        padding: 10px 15px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav ul ul li:hover {
+        background-color: orange;
+        color: black;
+      }
+      nav ul li:hover > ul {
+        display: flex;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      nav ul li:hover a {
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        background-color: white;
+        margin-top: 80px; /* Adjusted to accommodate fixed header */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #content {
+        background-image: url("R.png"); /* Replace with the actual path to the Irish flag image */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% -5%;
+      }
+      .title-container {
+        width: 100%;
+        padding: 60px 0;
+        text-align: center;
+      }
+      .title-container h1 {
+        font-family: "Uncial Antiqua", cursive;
+        font-size: 2.5em;
+        color: black;
+        margin: 0;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px 0;
+      }
+      .content .card {
+        flex: 1 1 calc(33.333% - 40px);
+        background-color: #f4f4f4;
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease; /* Added transition for smooth scaling */
+        border-color: orangered;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 9px;
+      }
+      .content .card img {
+        width: 100%;
+        height: 260px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensure images cover the entire area */
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: transform 0.3s ease; /* Added transition for smooth scaling */
+      }
+      .content .card:hover {
+        transform: scale(1.1); /* Scale image by 110% on hover */
+      }
+      .content .card h2 {
+        font-family: "Uncial Antiqua", cursive; /* Use the new font for titles */
+        font-size: 1.5em;
+        margin: 10px 0;
+      }
+      .content .card p {
+        font-size: 1em; /* Adjusted font size for content */
+        line-height: 1.6; /* Improved readability with increased line height */
+      }
+      .flag {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 60px;
+        height: auto;
+      }
+      footer {
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="flag.jpg" alt="Irish Flag" class="flag" id="flag" />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#flag">Home</a></li>
+          <li>
+            <a href="#culture">Culture</a>
+            <ul>
+              <li><a href="#food">Remarkable Food</a></li>
+              <li><a href="#history">Celtic History</a></li>
+              <li><a href="#festivals">Unique Music</a></li>
+            </ul>
+          </li>
+          <li><a href="https://en.wikipedia.org/wiki/Ireland">About Us</a></li>
+          <li>
+            <a href="#contact">Contact</a>
+            <ul>
+              <li><a href="mailto:irishcenter@gmail.com">Email</a></li>
+              <li><a href="#phone">Phone</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container" id="content">
+      <div class="title-container">
+        <h1>Welcome to Ireland</h1>
+      </div>
+      <div class="content">
+        <div class="card" id="culture">
+          <h2>Culture</h2>
+          <img src="celts.jpg" alt="Irish Culture" />
+          <p>
+            Discover the rich cultural heritage of Ireland, where traditions are
+            deeply woven into everyday life. From traditional music sessions in
+            cozy pubs to the energetic reels of Irish dance, immerse yourself in
+            the vibrant tapestry of Irish culture. Delve into the mystical tales
+            of ancient folklore and the enduring spirit of the Irish people.
+          </p>
+        </div>
+        <div class="card" id="nature">
+          <h2>Nature</h2>
+          <img src="landscape.jpg" alt="Irish Nature" />
+          <p>
+            Explore the breathtaking landscapes of Ireland, renowned for their
+            rugged beauty and serene charm. Wander through lush green valleys
+            dotted with ancient castles and meander along dramatic coastal
+            cliffs, where the Atlantic Ocean crashes against the rocky shores.
+            Discover the enchanting beauty of places like the Cliffs of Moher,
+            the mystical Giant's Causeway, and the tranquil lakes of Killarney.
+          </p>
+        </div>
+        <div class="card" id="history">
+          <h2>History</h2>
+          <img src="castle.jpg" alt="Irish History" />
+          <p>
+            Uncover the rich tapestry of Irish history, shaped by ancient
+            civilizations, medieval kingdoms, and modern influences. From the
+            prehistoric sites of Newgrange to the medieval strongholds of Dublin
+            and Kilkenny, trace the footsteps of warriors, saints, and scholars.
+            Learn about Ireland's struggle for independence, its cultural
+            renaissance, and its role in shaping global literature, art, and
+            politics.
+          </p>
+        </div>
+        <div class="card" id="food">
+          <h2>Food</h2>
+          <img src="food.jpg" alt="Irish Food" />
+          <p>
+            Indulge in the hearty flavors of traditional Irish cuisine,
+            celebrated for its comforting simplicity and wholesome ingredients.
+            Sample iconic dishes like Irish stew, made with tender lamb, root
+            vegetables, and savory broth, or savor the crisp texture of freshly
+            baked soda bread. Experience the warmth of Irish hospitality in
+            quaint village pubs or elegant dining rooms, where every meal is a
+            celebration of culinary heritage.
+          </p>
+        </div>
+        <div class="card" id="festivals">
+          <h2>Festivals</h2>
+          <img src="festival.jpg" alt="Irish Festivals" />
+          <p>
+            Immerse yourself in the festive spirit of Ireland, where every
+            season brings a lively celebration of music, arts, and community.
+            Experience the electric atmosphere of St. Patrick's Day, Ireland's
+            national holiday, marked by parades, concerts, and a sea of emerald
+            green. Celebrate the creativity of the Galway International Arts
+            Festival or dance to the rhythm of traditional music at the Fleadh
+            Cheoil na hÉireann.
+          </p>
+        </div>
+        <div class="card" id="tips">
+          <h2>Travel Tips</h2>
+          <img src="tips.jpg" alt="Travel Tips" />
+          <p>
+            Plan your journey to Ireland with practical travel tips to make the
+            most of your adventure. Discover the best times to visit, from the
+            vibrant blooms of spring to the golden hues of autumn. Navigate the
+            charming towns and bustling cities with ease, whether by car, train,
+            or the scenic routes of Ireland's Wild Atlantic Way. Embrace the
+            warmth of Irish hospitality in cozy bed and breakfasts or luxury
+            accommodations, ensuring a memorable stay in the Emerald Isle.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Ireland Travel Guide</p>
+    </footer>
+  </body>
+</html>
