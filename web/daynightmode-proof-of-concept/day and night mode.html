@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple website</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        font-family: monospace;
+      }
+      ul {
+        font-family: helvetica;
+      }
+      li {
+        list-style: circle;
+      }
+      .list {
+        list-style: square;
+      }
+      .light-theme {
+        color: #000000;
+        background: #00ff00;
+      }
+      :root {
+        --green: #00ff00;
+        --white: #ffffff;
+        --black: #000000;
+      }
+      .light-theme {
+        --bg: var(--green);
+        --fontColorva: var(--black);
+        --btnBg: var (--black);
+        --btnFontColor: var(--white);
+      }
+      .dark-theme {
+        --bg: var(--black);
+        --fontColor: var(--green);
+        --btnBg: var(--white);
+        --btnFontColor: var(--black);
+      }
+      * {
+        color: var(--fontColor);
+        font-family: helvetica;
+      }
+      body {
+        background: var(--bg);
+      }
+      .btn {
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        color: var(--btnFonntColor);
+        background: var(--btnBg);
+      }
+      .btn :focus {
+        outline-style: none;
+      }
+    </style>
+  </head>
+  <body class="dark-theme">
+    <h1>Task list</h1>
+    <p id="msg">Current tasks</p>
+    <ul>
+      <li class="list">Add visual styles</li>
+      <li class="list">Add light and dark themes</li>
+      <li>Enable switching the theme</li>
+    </ul>
+
+    <noscript>You need to enable JavaScript to view the full site</noscript>
+    <div>
+      <button class="btn">Dark</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
