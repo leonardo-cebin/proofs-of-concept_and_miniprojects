@@ -1,1 +1,1 @@
-# ceunsp-miniprojects
+# miniprojects-and-exercises
