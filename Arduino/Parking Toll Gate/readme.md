@@ -31,6 +31,6 @@ Servo Motor
 
 ## Diagrama do Circuito:
 
-![Screenshot (261)](https://github.com/neosandeep24/ArduinoExperiments/assets/103883917/c73c964d-4498-49f8-93dd-5aa18014e5b6)
+![Screenshot (261)](https://github.com/leonardo-cebin/proofs-of-concept_and_miniprojects/blob/main/Arduino/Parking%20Toll%20Gate/diagram-arduino-tollgate.png?raw=true)
 
 Projeto Arduino
