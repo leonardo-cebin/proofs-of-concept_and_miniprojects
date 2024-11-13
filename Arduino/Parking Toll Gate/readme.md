@@ -33,4 +33,4 @@ Servo Motor
 
 ![Screenshot (261)](https://github.com/leonardo-cebin/proofs-of-concept_and_miniprojects/blob/main/Arduino/Parking%20Toll%20Gate/diagram-arduino-tollgate.png?raw=true)
 
-Projeto Arduino
+Esquemática da disposição das peças para o correto funcionamento do código.
