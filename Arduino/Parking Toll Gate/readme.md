@@ -1,7 +1,7 @@
 # Abridor Automático de Portão
 
 ## Funcionamento
-Neste projeto, implementei um sistema automático de cancela de pedágio/estacionamento. Detectando o carro usando um sensor ultrassônico, o Arduino envia instruções para o servo motor levantar a cancela. Este projeto foi elaborado para a disciplina de Técnicas e Desenvolvimento de Algoritmos, ministrada pelo professor José Luis Pagotto.
+Neste projeto, implementei um sistema automático de cancela de pedágio/estacionamento. Detectando o carro usando um sensor ultrassônico, o Arduino envia instruções para o servo motor levantar a cancela. Este projeto foi elaborado para a disciplina de Técnicas e Desenvolvimento de Algoritmos, ministrada pelo professor José Luis Pagotto. O projeto foi apresentado no dia 12 de Novembro de 2024.
 
 ## Componentes utilizados:
 1. Arduino
