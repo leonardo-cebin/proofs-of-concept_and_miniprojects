@@ -1,4 +1,4 @@
-// Programa feito sem o uso de qualquer IA!!!
+#Programa feito sem o uso de qualquer IA!!!
 
 def main():
     m0 = float(input("Digite a massa inicial estimada (g):  "))
